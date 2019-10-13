@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | Hexo</title>
+  <title>Java知识点总结 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="javaSE（标准版） javaEE（企业版） javaME（微型版）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java知识点总结">
+<meta property="og:url" content="http://yoursite.com/2019/10/13/Java知识点总结/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="javaSE（标准版） javaEE（企业版） javaME（微型版）">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-13T11:29:45.655Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Java知识点总结">
+<meta name="twitter:description" content="javaSE（标准版） javaEE（企业版） javaME（微型版）">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,76 +154,272 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="w-Java知识点总结" class="article article-type-w " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Java知识点总结
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-w">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/13/Java知识点总结/" class="archive-article-date">
+
+        
+        <a href="/2019/10/13/Java知识点总结/" class="archive-article-date">
   	<time datetime="2019-10-13T11:06:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-13</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/13/Java知识点总结/">Java知识点总结</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>javaSE（标准版） javaEE（企业版） javaME（微型版）</p>
+<a id="more"></a>
+<p>JDK（java开发工具包）JRE（java运行环境）IDE（集成开发环境）</p>
+<ul>
+<li>Java SE（Java Platform，Standard Edition）。Java SE 以前称为 J2SE。它允许开发和部署在桌面、服务器、嵌入式环境和实时环境中使用的 Java 应用程序。Java SE 包含了支持 Java Web 服务开发的类，并为 Java Platform，Enterprise Edition（Java EE）提供基础。 J2SE就是做那种桌面安装程序样的，像QQ，WORD那种应用程序。</li>
+<li>Java EE（Java Platform，Enterprise Edition）。这个版本以前称为 J2EE。企业版本帮助开发和部署可移植、健壮、可伸缩且安全的服务器端 Java 应用程序。Java EE 是在 Java SE 的基础上构建的，它提供 Web 服务、组件模型、管理和通信 API，可以用来实现企业级的面向服务体系结构（service-oriented architecture，SOA）和 Web 2.0 应用程序。 J2EE 就是做基于Internet的应用程序，像选课系统，企业网站，银行系统之类的。</li>
+<li>Java ME（Java Platform，Micro Edition）。这个版本以前称为 J2ME。Java ME 为在移动设备和嵌入式设备（比如手机、PDA、电视机顶盒和打印机）上运行的应用程序提供一个健壮且灵活的环境。Java ME 包括灵活的用户界面、健壮的安全模型、许多内置的网络协议以及对可以动态下载的连网和离线应用程序的丰富支持。基于 Java ME 规范的应用程序只需编写一次，就可以用于许多设备，而且可以利用每个设备的本机功能。 J2ME就是做嵌入式系统开发的，像手机游戏之类的，像现在流行的Android操作系统。</li>
+<li>JDK（Java Development Kit）。</li>
+<li>JRE（Java Runtime Environment）</li>
+<li>IDE（Ind Depvelopment Environment）</li>
+</ul>
+<p>一、面向对象</p>
+<ol>
+<li><p>类、对象、变量<br>（1）所有的Java程序都已类class为组织单元；类由属性和方法两部分组成<br>（2）先创建对象，再使用对象<br>（3）成员变量：类中定义，自动定义初始值<br>局部变量：类方法中定义（两变量同名，局部变量有更高的优先级）</p>
+</li>
+<li><p>构造方法<br>构造方法是定义在java类中的一个用来初始化对象的方法，与类同名且没有返回值。</p>
+</li>
+</ol>
+<p>public 构造方法名（）{</p>
+<p>}<br>其中构造方法名与类同名；当没有指定的构造方法时，系统会自动添加无参构造方法</p>
+<ol start="3">
+<li>Static使用<br>Static修饰的成员属于整个类，被类的所有对象共享。可通过使用类名直接访问静态成员，也可通过对象名<br>Static可以修饰变量、方法和代码块</li>
+</ol>
+<p>（1）Static使用之静态方法<br>public class Helloworld {<br>    public static void print() {<br>        System.out.println(“***”);<br>    }</p>
+<pre><code>public static void main(String[] args) {
+    Helloworld.print();
+    Helloworld demo = new Helloworld;
+    demo.print();
+}</code></pre><p>}<br>注意：静态方法中可以直接调用同类的静态成员，但不可以直接调用非静态成员；普通成员方法中可以直接访问同类的非静态变量和静态变量；静态方法中不能直接调用非静态成员方法</p>
+<p>（2）Static使用之静态初始化块<br>静态初始化块在类加载时执行，且只会执行一次，同时静态初始化块只能给静态变量赋值，不能初始化普通成员</p>
+<p>public class Helloworld {<br>    int num1;<br>    int num2;<br>    static int num3;</p>
+<pre><code>public Helloworld() {
+    num1 = 91;
+    System.out.println(&quot;构造方法为num1赋值&quot;);
+    num2 = 74;
+    System.out.println(&quot;初始化块为num2赋值&quot;);
+    num3 = 83;
+    System.out.println(&quot;静态初始化块为num3赋值&quot;);
+}
 
-        <div class="article-info info-on-right">
-          
-          
+public static void main(String[] args) {
+    Helloworld hello = new Helloworld();
+    System.out.println(hello.num1);
+    System.out.println(hello.num2);
+    System.out.println(num3);
+    Helloworld hello2 = new Helloworld();
+}</code></pre><p>}<br>运行结果：静态初始化块为num3赋值<br>初始化块为num2赋值<br>构造方法为num1赋值<br>91<br>74<br>83<br>初始化块为num2赋值<br>构造方法为num1赋值</p>
+<p>二、java面向对象的特性</p>
+<ol>
+<li>封装性：将类的某些信息隐藏在内部，通过类的方法来实现操作访问<br>步骤：</li>
+<li>1 修改属性可见性；</li>
+<li>2 创建getter\setter方法；</li>
+<li>3在方法中加入属性控制语句</li>
+</ol>
+<p>(1)静态内部类:<br>public class SOuter {<br>    private int a = 99;<br>    static int b = 1;</p>
+<pre><code>public static class SInner {
+    int b = 2;
 
+    public void test() {
+        System.out.println(&quot;访问外部类b&quot; + SOuter.b);
+        System.out.println(&quot;访问内部类b&quot; + b);
+    }
+}
+
+public static void main(String[] args) {
+
+    //三行表示
+    SInner sInner;
+    sInner = new SInner();
+    sInner.test();
+
+    //两行表示
+    SInner si = new SInner();
+    si.test();
+
+    //一行表示
+    new SInner().test();
+
+}</code></pre><p>}<br>(2)成员内部类：访问外部类时使用this指针<br>（3）方法内部类：只能在该方法中使用，且不能使用访问控制符和Static修饰符<br>2. 继承性<br>（1）一般形式：class 子类 extends 父类<br>（2）方法重写：子类对继承的父类方法不满意可以重写，调用时优先调用子类方法<br>（3）继承的初始化顺序：先初始化父类，再到子类；先执行初始化对象中属性，再执行狗在方法中的初始化<br>（4）父类对象–属性初始化–构造方法–子类对象–属性初始化–构造方法<br>（5）注意：如果子类构造方法中没有显示调用父类的构造方法，默认调用父类无参构造方法，若此父类没用无参的构造方法，则编译出错</p>
+<ol start="3">
+<li>多态性<br>引用多态：父类的引用可以指向本类的对象，也可指向子类的对象<br>方法多态：创建本类对象时，调用的方法为本类方法；创建子类对象时，调用的方法为子类的重写的方法或者继承的方法</li>
+</ol>
+<p>（1）抽象类<br>用关键字abstract修饰：抽象类只用声明不需要实现；包含抽象方法的类为抽象类；抽象类不能直接创建，可以定义引用变量。</p>
+<p>public abstract class Telphone{<br>public abstract void call();            //抽象方法没有方法体，以分号结束<br>}<br>（2）接口（一种特殊的类，有全局变量和公共抽象方法组成）<br>[修饰符] class 类名 extends 父类implemrnts 接口1,2……<br>{类体部分<br>}<br>注：接口经常与匿名内部类配合使用</p>
+<p>public interface Iplay{<br>     public void phone();<br>}<br>public class People implements Iplay{<br>     public static void main(String[] args){<br>         People test=new People();<br>         test.phone();<br>      }<br>     public void phone(){<br>           System.out.println(“手机可以玩游戏”);<br>     }<br>}<br>1.String、StringBuilder、StringBuffer的区别是什么，String为什么是不可变的？<br>不可变性<br>String类的底层源码中，通过final关键字修饰字符串数组，private final char value[]，所以是不可变的。StringBuffer和StringBuilder类是集成自 AbstractStringBuilder 类， AbstractStringBuilder 类中的变量没有用final关键字修饰，所以是可变的。</p>
+<p>线程安全性<br>String是不可变的，是常量，所以是线程安全的。StringBuilder和StringBuffer都继承自AbstractStringBuilder 类，StringBuffer对方法加了同步锁，所以是线程安全的，而StringBuilder没有加同步锁，所以是线程不安全的。</p>
+<p>性能<br>对String类型进行改变是都会new一个新的string对象，并指向新的对象；</p>
+<p>StringBuffer直接通过改变自身变量的值，StringBuilder相对能提升性能，但有线程不安全的情况。</p>
+<p>2.== 与 equals<br>==用来判断两个对象是否相等，基础数据类型比较的是值是否相等。</p>
+<p>没有重写对象的equals方法时，也是用来比较两个对象是否相等，重写equals方法可以比较内容相等，返回true</p>
+<p>3.try/catch/finally中finally是否一定执行<br>在以下4种特殊情况下，finally块不会被执行:</p>
+<ol>
+<li><p>在finally语句块中发生了异常。</p>
+</li>
+<li><p>在前面的代码中用了System.exit()退出程序。</p>
+</li>
+<li><p>程序所在的线程死亡。</p>
+</li>
+<li><p>关闭CPU。</p>
+</li>
+</ol>
+<p>4.接口和抽象类的区别？<br>1.抽象类中可以实现方法，抽象接口不能实现方法（jdk1.8以后可以实现方法）；</p>
+<p>2.接口中的变量默认是final类型，而抽象类不是；</p>
+<p>3.类只能继承一个抽象类，而接口可以实现多个；</p>
+<p>4.类继承接口需要实现所有方法，抽象类不需要；</p>
+<p>5.接口不能用new实例化，可以声明。必须引用一个实现该接口的对象抽象是对类的抽象，是一种模板设计，接口是行为的抽象，是一种行为的规范。</p>
+<p>5.Arraylist 与 LinkedList 异同<br>安全性<br>ArrayList与LinkedList都是线程不安全的。</p>
+<p>数据结构实现<br>ArryayList是基于Object数组，而LinkedList是基于双向循环链表（JDK1.6之前为循环链表，之后取消了循环）</p>
+<p>插入删除的影响<br>ArrayList采用数组存储，插入删除受元素位置的影响；</p>
+<p>LinkedList采用链表存储，插入删除不收元素位置影响；</p>
+<p>访问元素<br>LinkedList 不支持高效的随机元素访问，而 ArrayList 支持。快速随机访问就是通过元素的序号快速获取元素对象(对应于get(int index)方法)。</p>
+<p>实现了RandomAccess接口的list，优先选择普通for循环 ，其次foreach,未实现RandomAccess接口的list， 优先选择iterator遍历(foreach遍历底层也是通过iterator实现的)，大size的数据，千万不要使用普通for循环</p>
+<p>6.ArrayList 与 Vector 区别<br>Vector中所有方法都是同步的，在多线程操作中，同步操作会耗费时间，而ArrayList是不需要同步的，在不需要考虑线程安全时可以使用。</p>
+<p>7.HashMap的底层实现<br>待补充完善</p>
+<p>8.HashSet 和 HashMap 区别<br>HashMap实现Map接口，用来存储键值对，调用put方法添加元素，使用Key计算Hashcode，而HashSet实现Set接口，用来存储对象，调用add方法添加对象，使用对象计算hashcode，根据equals方法判断对象相等，执行效率的话，HashMap优与HashSet。</p>
+<p>9.ConcurrentHashMap 和 Hashtable 的区别<br>ConcurrentHashMap 和 HashTable 的区别主要体现在实现线程安全的方式上不同。ConcurrentHashMap使用的是分段锁，HashTable使用的是同一把锁，因而在多线程并发中效率很低。</p>
+<p>10.多线程实现方式<br>1.继承Thread类，2.实现Runnable接口，3.基于线程池实现</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/13/Java知识点总结/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/13/hello-world/" class="archive-article-date">
-  	<time datetime="2019-10-13T10:51:52.718Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-13</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/10/13/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/13/hello-world/">Hello World</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -242,8 +442,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
