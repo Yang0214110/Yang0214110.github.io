@@ -4,9 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="github个人博客搭建, Jack Qin">
-    <meta name="description" content="1.Hexo介绍Hexo是基于NodeJs的静态博客框架，简单、轻量，其生成的静态网页可以托管在Github和Heroku上。超快速度支持MarkDown一键部署丰富的插件
-2. 环境准备2.1 安装node.js去nodejs官网下载对应">
+    <meta name="keywords" content="mysql常用命令, Jack Qin">
+    <meta name="description" content="1.创建数据库CREATE DATABASE 数据库名;
+1.1显示数据库show databases
+1.2删除数据库drop database &amp;lt;数据库名&amp;gt;
+1.3连接数据库use &amp;lt;数据库名&amp;gt;
+1.4当前选择的">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>github个人博客搭建 | QYY</title>
+    <title>mysql常用命令 | QYY</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -305,13 +308,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        github个人博客搭建
+                        mysql常用命令
                     </div>
                 </div>
             </div>
@@ -434,7 +437,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-10-16
+                    2019-11-03
                 </div>
 
                 
@@ -450,14 +453,20 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1-Hexo介绍"><a href="#1-Hexo介绍" class="headerlink" title="1.Hexo介绍"></a>1.Hexo介绍</h2><p>Hexo是基于NodeJs的静态博客框架，简单、轻量，其生成的静态网页可以托管在Github和Heroku上。<br>超快速度<br>支持MarkDown<br>一键部署<br>丰富的插件</p>
-<h2 id="2-环境准备"><a href="#2-环境准备" class="headerlink" title="2. 环境准备"></a>2. 环境准备</h2><h3 id="2-1-安装node-js"><a href="#2-1-安装node-js" class="headerlink" title="2.1 安装node.js"></a>2.1 安装node.js</h3><p>去nodejs官网下载对应系统的安装包，按提示安装。<br>检验安装成功：<br>$ node -v</p>
-<h3 id="2-2安装hexo"><a href="#2-2安装hexo" class="headerlink" title="2.2安装hexo"></a>2.2安装hexo</h3><p>$ npm install hexo-cli -g</p>
-<h2 id="3-利用Hexo搭建一个博客"><a href="#3-利用Hexo搭建一个博客" class="headerlink" title="3.利用Hexo搭建一个博客"></a>3.利用Hexo搭建一个博客</h2><h3 id="3-1-创建博客目录limedroid-github-io"><a href="#3-1-创建博客目录limedroid-github-io" class="headerlink" title="3.1 创建博客目录limedroid.github.io"></a>3.1 创建博客目录limedroid.github.io</h3><p>$ hexo init limedroid.github.io<br>$ cd limedroid.github.io<br>$ npm install</p>
-<h3 id="3-2-生成静态页面"><a href="#3-2-生成静态页面" class="headerlink" title="3.2 生成静态页面"></a>3.2 生成静态页面</h3><p>$ hexo clean<br>$ hexo g</p>
-<h3 id="3-3-运行"><a href="#3-3-运行" class="headerlink" title="3.3 运行"></a>3.3 运行</h3><p>$ hexo s<br>然后打开浏览器，输入地址 localhost:4000 即可看到效果</p>
-<h2 id="4-发一篇文章试试"><a href="#4-发一篇文章试试" class="headerlink" title="4.发一篇文章试试"></a>4.发一篇文章试试</h2><h3 id="4-1-命令方式"><a href="#4-1-命令方式" class="headerlink" title="4.1 命令方式"></a>4.1 命令方式</h3><p>$ hexo new test<br>此时会在source/_posts目录下生成test.md文件，输入些许内容，然后保存.<br>生成下，看看效果<br>$ hexo clean<br>$ hexo g<br>$ hexo s<br>访问 localhost:4000 即可</p>
-<h3 id="4-2-直接方式"><a href="#4-2-直接方式" class="headerlink" title="4.2 直接方式"></a>4.2 直接方式</h3><p>在 **source/_posts/**下新建一个.md文件也可<br>##5 配置<br>网站的设置大部分都在**_config.yml**文件中，详细配置可以查看官方文档<br>下面只列出简单常用配置<br>title -&gt; 网站标题<br>subtitle -&gt; 网站副标题<br>description -&gt; 网站描述<br>author -&gt; 您的名字<br>language -&gt; 网站使用的语言<br>坑：进行配置时，需要在冒号:后加一个英文空格<br>title: Droidlover</p>
+                <h2 id="1-创建数据库"><a href="#1-创建数据库" class="headerlink" title="1.创建数据库"></a>1.创建数据库</h2><p>CREATE DATABASE 数据库名;</p>
+<h3 id="1-1显示数据库"><a href="#1-1显示数据库" class="headerlink" title="1.1显示数据库"></a>1.1显示数据库</h3><p>show databases</p>
+<h3 id="1-2删除数据库"><a href="#1-2删除数据库" class="headerlink" title="1.2删除数据库"></a>1.2删除数据库</h3><p>drop database &lt;数据库名&gt;</p>
+<h3 id="1-3连接数据库"><a href="#1-3连接数据库" class="headerlink" title="1.3连接数据库"></a>1.3连接数据库</h3><p>use &lt;数据库名&gt;</p>
+<h3 id="1-4当前选择的数据库"><a href="#1-4当前选择的数据库" class="headerlink" title="1.4当前选择的数据库"></a>1.4当前选择的数据库</h3><p>mysql&gt; select database();</p>
+<h2 id="2-创建数据表"><a href="#2-创建数据表" class="headerlink" title="2.创建数据表"></a>2.创建数据表</h2><p>create table &lt;表名&gt; ( &lt;字段名1&gt; &lt;类型1&gt; [,..&lt;字段名n&gt; &lt;类型n&gt;]);</p>
+<h3 id="2-1删除数据表"><a href="#2-1删除数据表" class="headerlink" title="2.1删除数据表"></a>2.1删除数据表</h3><p>drop table &lt;表名&gt;</p>
+<h3 id="2-2表插入数据"><a href="#2-2表插入数据" class="headerlink" title="2.2表插入数据"></a>2.2表插入数据</h3><p>insert into &lt;表名&gt; [( &lt;字段名1&gt;[,..&lt;字段名n &gt; ])] values ( 值1 )[, ( 值n )]</p>
+<h3 id="2-3查询表中的数据"><a href="#2-3查询表中的数据" class="headerlink" title="2.3查询表中的数据"></a>2.3查询表中的数据</h3><p>查询所有行<br>select &lt;字段1，字段2，…&gt; from &lt; 表名 &gt; where &lt; 表达式 &gt;<br>查询前几行数据<br>查看表 MyClass 中前2行数据<br>mysql&gt; select * from MyClass order by id limit 0,2;</p>
+<h3 id="2-4-删除表中数据"><a href="#2-4-删除表中数据" class="headerlink" title="2.4 删除表中数据"></a>2.4 删除表中数据</h3><p>delete from 表名 where 表达式</p>
+<h3 id="2-5修改表中数据"><a href="#2-5修改表中数据" class="headerlink" title="2.5修改表中数据"></a>2.5修改表中数据</h3><p>update 表名 set 字段=新值,… where 条件</p>
+<h3 id="2-6增加字段"><a href="#2-6增加字段" class="headerlink" title="2.6增加字段"></a>2.6增加字段</h3><p>alter table 表名 add字段 类型 其他;<br>加索引<br>mysql&gt; alter table 表名 add index 索引名 (字段名1[，字段名2 …]);<br>加主关键字的索引<br>mysql&gt; alter table 表名 add primary key (字段名);<br>加唯一限制条件的索引<br>mysql&gt; alter table 表名 add unique 索引名 (字段名);<br>删除某个索引<br>mysql&gt; alter table 表名 drop index 索引名;<br>增加字段<br>mysql&gt; ALTER TABLE table_name ADD field_name field_type;<br>修改原字段名称及类型<br>mysql&gt; ALTER TABLE table_name CHANGE old_field_name new_field_name field_type;<br>删除字段<br>MySQL ALTER TABLE table_name DROP field_name;</p>
+<h3 id="2-7修改表名"><a href="#2-7修改表名" class="headerlink" title="2.7修改表名"></a>2.7修改表名</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rename table 原表名 to 新表名;</span><br></pre></td></tr></table></figure>
+
 
             </div>
             <hr/>
@@ -618,8 +627,8 @@
                 </a>
             </div>
             <br/>
-            <a  href="/2019/10/16/github个人博客搭建/">
-                    《github个人博客搭建》
+            <a  href="/2019/11/03/Mysql常用命令/">
+                    《mysql常用命令》
             </a> 由
             <a href="http://yoursite.com">
                 Jack Qin
@@ -660,9 +669,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/11/03/Mysql常用命令/">
                     <div class="card-image">
@@ -684,9 +694,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-11-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-03
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -695,6 +705,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -705,28 +716,25 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/10/13/Java知识点总结/">
+                <a href="/2019/10/16/github个人博客搭建/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Java知识点总结">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="github个人博客搭建">
                         
-                        <span class="card-title">Java知识点总结</span>
+                        <span class="card-title">github个人博客搭建</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            javaSE（标准版） javaEE（企业版） javaME（微型版）
-
-JDK（java开发工具包）JRE（java运行环境）IDE（集成开发环境）
-
-Java SE（Java Platform，Standard Edition）。Jav
+                            1.Hexo介绍Hexo是基于NodeJs的静态博客框架，简单、轻量，其生成的静态网页可以托管在Github和Heroku上。超快速度支持MarkDown一键部署丰富的插件
+2. 环境准备2.1 安装node.js去nodejs官网下载对应
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-13
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-16
                             </span>
                         <span class="publish-author">
                             
