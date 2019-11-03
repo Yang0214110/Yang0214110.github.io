@@ -4,12 +4,9 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql常用命令, Jack Qin">
-    <meta name="description" content="1.创建数据库CREATE DATABASE 数据库名;
-1.1显示数据库show databases
-1.2删除数据库drop database &amp;lt;数据库名&amp;gt;
-1.3连接数据库use &amp;lt;数据库名&amp;gt;
-1.4当前选择的">
+    <meta name="keywords" content="Jack Qin">
+    <meta name="description" content="jsp内置对象-response对象一、概念隐含对象response是javax.servlet.HttpServletResponse接口实现类的对象。response对象封装了JSP产生的响应，用于响应客户端的请求，向客户端输出信息。
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>mysql常用命令 | QYY</title>
+    <title>QYY</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,13 +305,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        mysql常用命令
+                        
                     </div>
                 </div>
             </div>
@@ -453,20 +450,25 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1-创建数据库"><a href="#1-创建数据库" class="headerlink" title="1.创建数据库"></a>1.创建数据库</h2><p>CREATE DATABASE 数据库名;</p>
-<h3 id="1-1显示数据库"><a href="#1-1显示数据库" class="headerlink" title="1.1显示数据库"></a>1.1显示数据库</h3><p>show databases</p>
-<h3 id="1-2删除数据库"><a href="#1-2删除数据库" class="headerlink" title="1.2删除数据库"></a>1.2删除数据库</h3><p>drop database &lt;数据库名&gt;</p>
-<h3 id="1-3连接数据库"><a href="#1-3连接数据库" class="headerlink" title="1.3连接数据库"></a>1.3连接数据库</h3><p>use &lt;数据库名&gt;</p>
-<h3 id="1-4当前选择的数据库"><a href="#1-4当前选择的数据库" class="headerlink" title="1.4当前选择的数据库"></a>1.4当前选择的数据库</h3><p>mysql&gt; select database();</p>
-<h2 id="2-创建数据表"><a href="#2-创建数据表" class="headerlink" title="2.创建数据表"></a>2.创建数据表</h2><p>create table &lt;表名&gt; ( &lt;字段名1&gt; &lt;类型1&gt; [,..&lt;字段名n&gt; &lt;类型n&gt;]);</p>
-<h3 id="2-1删除数据表"><a href="#2-1删除数据表" class="headerlink" title="2.1删除数据表"></a>2.1删除数据表</h3><p>drop table &lt;表名&gt;</p>
-<h3 id="2-2表插入数据"><a href="#2-2表插入数据" class="headerlink" title="2.2表插入数据"></a>2.2表插入数据</h3><p>insert into &lt;表名&gt; [( &lt;字段名1&gt;[,..&lt;字段名n &gt; ])] values ( 值1 )[, ( 值n )]</p>
-<h3 id="2-3查询表中的数据"><a href="#2-3查询表中的数据" class="headerlink" title="2.3查询表中的数据"></a>2.3查询表中的数据</h3><p>查询所有行<br>select &lt;字段1，字段2，…&gt; from &lt; 表名 &gt; where &lt; 表达式 &gt;<br>查询前几行数据<br>查看表 MyClass 中前2行数据<br>mysql&gt; select * from MyClass order by id limit 0,2;</p>
-<h3 id="2-4-删除表中数据"><a href="#2-4-删除表中数据" class="headerlink" title="2.4 删除表中数据"></a>2.4 删除表中数据</h3><p>delete from 表名 where 表达式</p>
-<h3 id="2-5修改表中数据"><a href="#2-5修改表中数据" class="headerlink" title="2.5修改表中数据"></a>2.5修改表中数据</h3><p>update 表名 set 字段=新值,… where 条件</p>
-<h3 id="2-6增加字段"><a href="#2-6增加字段" class="headerlink" title="2.6增加字段"></a>2.6增加字段</h3><p>alter table 表名 add字段 类型 其他;<br>加索引<br>mysql&gt; alter table 表名 add index 索引名 (字段名1[，字段名2 …]);<br>加主关键字的索引<br>mysql&gt; alter table 表名 add primary key (字段名);<br>加唯一限制条件的索引<br>mysql&gt; alter table 表名 add unique 索引名 (字段名);<br>删除某个索引<br>mysql&gt; alter table 表名 drop index 索引名;<br>增加字段<br>mysql&gt; ALTER TABLE table_name ADD field_name field_type;<br>修改原字段名称及类型<br>mysql&gt; ALTER TABLE table_name CHANGE old_field_name new_field_name field_type;<br>删除字段<br>MySQL ALTER TABLE table_name DROP field_name;</p>
-<h3 id="2-7修改表名"><a href="#2-7修改表名" class="headerlink" title="2.7修改表名"></a>2.7修改表名</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rename table 原表名 to 新表名;</span><br></pre></td></tr></table></figure>
+                <h2 id="jsp内置对象-response对象"><a href="#jsp内置对象-response对象" class="headerlink" title="jsp内置对象-response对象"></a>jsp内置对象-response对象</h2><h3 id="一、概念"><a href="#一、概念" class="headerlink" title="一、概念"></a>一、概念</h3><p>隐含对象response是javax.servlet.HttpServletResponse接口实现类的对象。response对象封装了JSP产生的响应，用于响应客户端的请求，向客户端输出信息。</p>
+<p>每次服务器端都会响应一个response实例。response对象经常用于设置HTTP标题、添加Cookie、设置响应内容的类型和状态、发送HTTP重定向和编码URL等。</p>
+<p>response对象的常用方法：</p>
+<p><img src="https://img2018.cnblogs.com/blog/1648343/201904/1648343-20190407104347278-1581997568.png" alt="img"></p>
+<h3 id="二、response重定向"><a href="#二、response重定向" class="headerlink" title="二、response重定向"></a>二、response重定向</h3><p>request对象的sendRedirect()方法是向服务器发送一个重定向请求。当使用该方法转到另一个页面时，等于重新发送了一个请求，所以在原来页面中的request参数转到新页面之后就失效了，这是因为他们的request不同。</p>
+<p>一般来说，在页面中使用sendRedirect()方法时，不能在方法前有HTML输出，但并非绝对的，不能有HTML输出其实是指不能有HTML被送到浏览器。实际上，现在的服务器有cache机制，一般在8KB左右。所以，除非关闭cache，或者你使用了方法out.flush()强制刷新，否则在使用sendRedirect()方法之前，有少量的HTML输出也是允许的。</p>
+<p>案例</p>
+<p>step1：创建user.jsp：</p>
+<p><img src="https://img2018.cnblogs.com/blog/1648343/201904/1648343-20190407113018091-1425485180.png" alt="img"></p>
+<p>step2：创建response.jsp</p>
+<p><img src="https://img2018.cnblogs.com/blog/1648343/201904/1648343-20190407115300077-1064516439.png" alt="img"></p>
+<p>结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://localhost:8080/ch04/userresponse.jsp</span><br></pre></td></tr></table></figure>
 
+<p>登录失败：<img src="https://img2018.cnblogs.com/blog/1648343/201904/1648343-20190407115506268-1774469778.png" alt="img"></p>
+<p>点击登录后，重新定向到该页面：</p>
+<p><img src="https://img2018.cnblogs.com/blog/1648343/201904/1648343-20190407115610785-1940096292.png" alt="img"></p>
+<p>登录成功：</p>
+<p><img src="https://img2018.cnblogs.com/blog/1648343/201904/1648343-20190407115355155-1947527941.png" alt="img"></p>
 
             </div>
             <hr/>
@@ -627,8 +629,8 @@
                 </a>
             </div>
             <br/>
-            <a  href="/2019/11/03/Mysql常用命令/">
-                    《mysql常用命令》
+            <a  href="/2019/11/03/jsp内置对象-response对象/">
+                    《》
             </a> 由
             <a href="http://yoursite.com">
                 Jack Qin
@@ -669,11 +671,12 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/11/03/Tomcat配置/">
+                <a href="/2019/11/03/jsp内置对象-response对象/">
                     <div class="card-image">
                         
                         
@@ -685,17 +688,14 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1.下载安装1.1首先，登录到Tomcat官方装包下载地址。
-在【Download】目录下，找到并点击合适版本的Tomcat。
-（由于我的JDK为1.8.0，因此我选择了下载Tomcat8版本）。
+                            jsp内置对象-response对象一、概念隐含对象response是javax.servlet.HttpServletResponse接口实现类的对象。response对象封装了JSP产生的响应，用于响应客户端的请求，向客户端输出信息。
 
-1.2点击[tomcat8]后，根据自己
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-11-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-03
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -704,6 +704,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -714,25 +715,25 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/10/16/github个人博客搭建/">
+                <a href="/2019/11/03/request内置对象/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="github个人博客搭建">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">github个人博客搭建</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1.Hexo介绍Hexo是基于NodeJs的静态博客框架，简单、轻量，其生成的静态网页可以托管在Github和Heroku上。超快速度支持MarkDown一键部署丰富的插件
-2. 环境准备2.1 安装node.js去nodejs官网下载对应
+                            request内置对象隐含对象request是javax.servlet.HttpSeverletRequest接口实现类的对象，代表从客户端用户发送过来的请求。
+使用request对象可以获得客户端的信息以及用户提交的数据或参数，每次客户
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-03
                             </span>
                         <span class="publish-author">
                             

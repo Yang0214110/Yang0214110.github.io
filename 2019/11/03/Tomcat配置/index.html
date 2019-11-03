@@ -4,12 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql常用命令, Jack Qin">
-    <meta name="description" content="1.创建数据库CREATE DATABASE 数据库名;
-1.1显示数据库show databases
-1.2删除数据库drop database &amp;lt;数据库名&amp;gt;
-1.3连接数据库use &amp;lt;数据库名&amp;gt;
-1.4当前选择的">
+    <meta name="keywords" content="Jack Qin">
+    <meta name="description" content="1.下载安装1.1首先，登录到Tomcat官方装包下载地址。
+在【Download】目录下，找到并点击合适版本的Tomcat。
+（由于我的JDK为1.8.0，因此我选择了下载Tomcat8版本）。
+
+1.2点击[tomcat8]后，根据自己">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>mysql常用命令 | QYY</title>
+    <title>QYY</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,13 +308,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        mysql常用命令
+                        
                     </div>
                 </div>
             </div>
@@ -453,21 +453,38 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1-创建数据库"><a href="#1-创建数据库" class="headerlink" title="1.创建数据库"></a>1.创建数据库</h2><p>CREATE DATABASE 数据库名;</p>
-<h3 id="1-1显示数据库"><a href="#1-1显示数据库" class="headerlink" title="1.1显示数据库"></a>1.1显示数据库</h3><p>show databases</p>
-<h3 id="1-2删除数据库"><a href="#1-2删除数据库" class="headerlink" title="1.2删除数据库"></a>1.2删除数据库</h3><p>drop database &lt;数据库名&gt;</p>
-<h3 id="1-3连接数据库"><a href="#1-3连接数据库" class="headerlink" title="1.3连接数据库"></a>1.3连接数据库</h3><p>use &lt;数据库名&gt;</p>
-<h3 id="1-4当前选择的数据库"><a href="#1-4当前选择的数据库" class="headerlink" title="1.4当前选择的数据库"></a>1.4当前选择的数据库</h3><p>mysql&gt; select database();</p>
-<h2 id="2-创建数据表"><a href="#2-创建数据表" class="headerlink" title="2.创建数据表"></a>2.创建数据表</h2><p>create table &lt;表名&gt; ( &lt;字段名1&gt; &lt;类型1&gt; [,..&lt;字段名n&gt; &lt;类型n&gt;]);</p>
-<h3 id="2-1删除数据表"><a href="#2-1删除数据表" class="headerlink" title="2.1删除数据表"></a>2.1删除数据表</h3><p>drop table &lt;表名&gt;</p>
-<h3 id="2-2表插入数据"><a href="#2-2表插入数据" class="headerlink" title="2.2表插入数据"></a>2.2表插入数据</h3><p>insert into &lt;表名&gt; [( &lt;字段名1&gt;[,..&lt;字段名n &gt; ])] values ( 值1 )[, ( 值n )]</p>
-<h3 id="2-3查询表中的数据"><a href="#2-3查询表中的数据" class="headerlink" title="2.3查询表中的数据"></a>2.3查询表中的数据</h3><p>查询所有行<br>select &lt;字段1，字段2，…&gt; from &lt; 表名 &gt; where &lt; 表达式 &gt;<br>查询前几行数据<br>查看表 MyClass 中前2行数据<br>mysql&gt; select * from MyClass order by id limit 0,2;</p>
-<h3 id="2-4-删除表中数据"><a href="#2-4-删除表中数据" class="headerlink" title="2.4 删除表中数据"></a>2.4 删除表中数据</h3><p>delete from 表名 where 表达式</p>
-<h3 id="2-5修改表中数据"><a href="#2-5修改表中数据" class="headerlink" title="2.5修改表中数据"></a>2.5修改表中数据</h3><p>update 表名 set 字段=新值,… where 条件</p>
-<h3 id="2-6增加字段"><a href="#2-6增加字段" class="headerlink" title="2.6增加字段"></a>2.6增加字段</h3><p>alter table 表名 add字段 类型 其他;<br>加索引<br>mysql&gt; alter table 表名 add index 索引名 (字段名1[，字段名2 …]);<br>加主关键字的索引<br>mysql&gt; alter table 表名 add primary key (字段名);<br>加唯一限制条件的索引<br>mysql&gt; alter table 表名 add unique 索引名 (字段名);<br>删除某个索引<br>mysql&gt; alter table 表名 drop index 索引名;<br>增加字段<br>mysql&gt; ALTER TABLE table_name ADD field_name field_type;<br>修改原字段名称及类型<br>mysql&gt; ALTER TABLE table_name CHANGE old_field_name new_field_name field_type;<br>删除字段<br>MySQL ALTER TABLE table_name DROP field_name;</p>
-<h3 id="2-7修改表名"><a href="#2-7修改表名" class="headerlink" title="2.7修改表名"></a>2.7修改表名</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rename table 原表名 to 新表名;</span><br></pre></td></tr></table></figure>
-
-
+                <h2 id="1-下载安装"><a href="#1-下载安装" class="headerlink" title="1.下载安装"></a>1.下载安装</h2><h3 id="1-1"><a href="#1-1" class="headerlink" title="1.1"></a>1.1</h3><p>首先，登录到Tomcat官方装包下载地址。</p>
+<p>在【Download】目录下，找到并点击合适版本的Tomcat。</p>
+<p>（由于我的JDK为1.8.0，因此我选择了下载Tomcat8版本）。</p>
+<p><a href="http://jingyan.baidu.com/album/e8cdb32be15b0437052bad17.html?picindex=2" target="_blank" rel="noopener"><img src="https://imgsa.baidu.com/exp/w=500/sign=e0875baeaf8b87d65042ab1f37092860/21a4462309f79052cbb9aea102f3d7ca7acbd58f.jpg" alt="Tomcat下载安装及配置教程"></a></p>
+<h3 id="1-2"><a href="#1-2" class="headerlink" title="1.2"></a>1.2</h3><p>点击[tomcat8]后，根据自己电脑操作系统的位数，再选择右侧【core】下的压缩包进行下载，并保存。</p>
+<p><a href="http://jingyan.baidu.com/album/e8cdb32be15b0437052bad17.html?picindex=3" target="_blank" rel="noopener"><img src="https://imgsa.baidu.com/exp/w=500/sign=bbc5d21c012442a7ae0efda5e142ad95/377adab44aed2e73ae406eb38901a18b86d6fa80.jpg" alt="Tomcat下载安装及配置教程"></a></p>
+<h3 id="1-3"><a href="#1-3" class="headerlink" title="1.3"></a>1.3</h3><p>因为下载的该压缩为免安装版Tomcat，下载完成后，将该<strong>压缩包解压</strong>即可。</p>
+<p>（记住该<strong>解压文件的存放位置</strong>，后面环境变量配置会用到）</p>
+<p><a href="http://jingyan.baidu.com/album/e8cdb32be15b0437052bad17.html?picindex=4" target="_blank" rel="noopener"><img src="https://imgsa.baidu.com/exp/w=500/sign=b8745f36a7014c08193b28a53a7a025b/0b46f21fbe096b63a7748ccf02338744eaf8acc4.jpg" alt="Tomcat下载安装及配置教程"></a></p>
+<p>END</p>
+<h2 id="2-环境变量配置"><a href="#2-环境变量配置" class="headerlink" title="2.环境变量配置"></a>2.环境变量配置</h2><h3 id="2-1"><a href="#2-1" class="headerlink" title="2.1"></a>2.1</h3><p>鼠标右键点击【这台电脑】–&gt;选择【属性】-&gt;【高级系统设置】–&gt;【系统变量】。</p>
+<p><a href="http://jingyan.baidu.com/album/e8cdb32be15b0437052bad17.html?picindex=5" target="_blank" rel="noopener"><img src="https://imgsa.baidu.com/exp/w=500/sign=fe07c25aeefe9925cb0c695004a95ee4/c83d70cf3bc79f3d3cf23eafb4a1cd11728b291a.jpg" alt="Tomcat下载安装及配置教程"></a></p>
+<p><a href="http://jingyan.baidu.com/album/e8cdb32be15b0437052bad17.html?picindex=6" target="_blank" rel="noopener"><img src="https://imgsa.baidu.com/exp/w=500/sign=9a03046bb94543a9f51bfacc2e168a7b/7af40ad162d9f2d37e36fe70a7ec8a136327cc0e.jpg" alt="Tomcat下载安装及配置教程"></a></p>
+<h3 id="2-2"><a href="#2-2" class="headerlink" title="2.2"></a>2.2</h3><p>然后，点击“系统变量”框下的【新建】按钮。</p>
+<p>（1）新建CATALINA_BASE变量</p>
+<p>变量名：CATALINA_HOME</p>
+<p>变量值：C:\my\apache-tomcat-8.5.42-windows-x64\apache-tomcat-8.5.42</p>
+<p>（Tomcat安装位置，即刚刚解压文件夹下bin文件所在位置）</p>
+<p><a href="http://jingyan.baidu.com/album/e8cdb32be15b0437052bad17.html?picindex=7" target="_blank" rel="noopener"><img src="https://imgsa.baidu.com/exp/w=500/sign=09e9bc08d733c895a67e987be1127397/4bed2e738bd4b31c81cc5f2489d6277f9f2ff8b9.jpg" alt="Tomcat下载安装及配置教程"></a></p>
+<h3 id="2-3"><a href="#2-3" class="headerlink" title="2.3"></a>2.3</h3><p>（2）新建CATALINA_HOME变量</p>
+<p>变量名：CATALINA_HOME</p>
+<p>变量值：C:\my\apache-tomcat-8.5.42-windows-x64\apache-tomcat-8.5.42</p>
+<p>（变量值同上，填Tomcat的安装位置）</p>
+<p><a href="http://jingyan.baidu.com/album/e8cdb32be15b0437052bad17.html?picindex=8" target="_blank" rel="noopener"><img src="https://imgsa.baidu.com/exp/w=500/sign=95bc2945eefe9925cb0c695004a95ee4/c83d70cf3bc79f3d5749d5b0b4a1cd11738b2981.jpg" alt="Tomcat下载安装及配置教程"></a></p>
+<h3 id="2-4"><a href="#2-4" class="headerlink" title="2.4"></a>2.4</h3><p>（3）找到Path变量，点击编辑</p>
+<p>变量名：Path</p>
+<p>变量值： %CATALINA_HOME%\bin</p>
+<p>（不要删除原有path变量值，直接在最后一行添加上这一句即可）</p>
+<p><a href="http://jingyan.baidu.com/album/e8cdb32be15b0437052bad17.html?picindex=9" target="_blank" rel="noopener"><img src="https://imgsa.baidu.com/exp/w=500/sign=12e2dc0444ed2e73fce9862cb700a16d/54fbb2fb43166d226bd22614482309f79152d28c.jpg" alt="Tomcat下载安装及配置教程"></a></p>
+<h3 id="2-5"><a href="#2-5" class="headerlink" title="2.5"></a>2.5</h3><p>这样Tomcat就配置好了。打开cmd命令提示符，输入startup后回车，就可以看到Tomcat成功启动了。</p>
+<p><a href="http://jingyan.baidu.com/album/e8cdb32be15b0437052bad17.html?picindex=10" target="_blank" rel="noopener"><img src="https://imgsa.baidu.com/exp/w=500/sign=6704c30f6281800a6ee5890e813433d6/8694a4c27d1ed21bb8a81465a36eddc450da3fc8.jpg" alt="Tomcat下载安装及配置教程"></a></p>
+<h3 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h3><h3 id="还可以在浏览器地址栏输入localhost-8080或127-0-0-1-8080，验证Tomcat是否配置成功。"><a href="#还可以在浏览器地址栏输入localhost-8080或127-0-0-1-8080，验证Tomcat是否配置成功。" class="headerlink" title="还可以在浏览器地址栏输入localhost:8080或127.0.0.1:8080，验证Tomcat是否配置成功。"></a>还可以在浏览器地址栏输入localhost:8080或127.0.0.1:8080，验证Tomcat是否配置成功。</h3>
             </div>
             <hr/>
 
@@ -627,8 +644,8 @@
                 </a>
             </div>
             <br/>
-            <a  href="/2019/11/03/Mysql常用命令/">
-                    《mysql常用命令》
+            <a  href="/2019/11/03/Tomcat配置/">
+                    《》
             </a> 由
             <a href="http://yoursite.com">
                 Jack Qin
@@ -673,7 +690,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/11/03/Tomcat配置/">
+                <a href="/2019/11/03/Eclipse环境下配置Tomcat8.0.36/">
                     <div class="card-image">
                         
                         
@@ -685,11 +702,11 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1.下载安装1.1首先，登录到Tomcat官方装包下载地址。
-在【Download】目录下，找到并点击合适版本的Tomcat。
-（由于我的JDK为1.8.0，因此我选择了下载Tomcat8版本）。
+                            Eclipse环境下配置Tomcat8.0.361.打开Eclipse，单击“Window”菜单，选择下方的“Preferences”
 
-1.2点击[tomcat8]后，根据自己
+2.单击“Server”选项，选择下方的“Runtime Environments”。
+
+3.点击“A
                         
                     </div>
                     <div class="publish-info">
@@ -714,25 +731,28 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/10/16/github个人博客搭建/">
+                <a href="/2019/11/03/Mysql常用命令/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="github个人博客搭建">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="mysql常用命令">
                         
-                        <span class="card-title">github个人博客搭建</span>
+                        <span class="card-title">mysql常用命令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1.Hexo介绍Hexo是基于NodeJs的静态博客框架，简单、轻量，其生成的静态网页可以托管在Github和Heroku上。超快速度支持MarkDown一键部署丰富的插件
-2. 环境准备2.1 安装node.js去nodejs官网下载对应
+                            1.创建数据库CREATE DATABASE 数据库名;
+1.1显示数据库show databases
+1.2删除数据库drop database &lt;数据库名&gt;
+1.3连接数据库use &lt;数据库名&gt;
+1.4当前选择的
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-03
                             </span>
                         <span class="publish-author">
                             

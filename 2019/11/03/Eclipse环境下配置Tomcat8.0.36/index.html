@@ -4,12 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql常用命令, Jack Qin">
-    <meta name="description" content="1.创建数据库CREATE DATABASE 数据库名;
-1.1显示数据库show databases
-1.2删除数据库drop database &amp;lt;数据库名&amp;gt;
-1.3连接数据库use &amp;lt;数据库名&amp;gt;
-1.4当前选择的">
+    <meta name="keywords" content="Jack Qin">
+    <meta name="description" content="Eclipse环境下配置Tomcat8.0.361.打开Eclipse，单击“Window”菜单，选择下方的“Preferences”
+
+2.单击“Server”选项，选择下方的“Runtime Environments”。
+
+3.点击“A">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>mysql常用命令 | QYY</title>
+    <title>QYY</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,13 +308,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        mysql常用命令
+                        
                     </div>
                 </div>
             </div>
@@ -453,20 +453,42 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1-创建数据库"><a href="#1-创建数据库" class="headerlink" title="1.创建数据库"></a>1.创建数据库</h2><p>CREATE DATABASE 数据库名;</p>
-<h3 id="1-1显示数据库"><a href="#1-1显示数据库" class="headerlink" title="1.1显示数据库"></a>1.1显示数据库</h3><p>show databases</p>
-<h3 id="1-2删除数据库"><a href="#1-2删除数据库" class="headerlink" title="1.2删除数据库"></a>1.2删除数据库</h3><p>drop database &lt;数据库名&gt;</p>
-<h3 id="1-3连接数据库"><a href="#1-3连接数据库" class="headerlink" title="1.3连接数据库"></a>1.3连接数据库</h3><p>use &lt;数据库名&gt;</p>
-<h3 id="1-4当前选择的数据库"><a href="#1-4当前选择的数据库" class="headerlink" title="1.4当前选择的数据库"></a>1.4当前选择的数据库</h3><p>mysql&gt; select database();</p>
-<h2 id="2-创建数据表"><a href="#2-创建数据表" class="headerlink" title="2.创建数据表"></a>2.创建数据表</h2><p>create table &lt;表名&gt; ( &lt;字段名1&gt; &lt;类型1&gt; [,..&lt;字段名n&gt; &lt;类型n&gt;]);</p>
-<h3 id="2-1删除数据表"><a href="#2-1删除数据表" class="headerlink" title="2.1删除数据表"></a>2.1删除数据表</h3><p>drop table &lt;表名&gt;</p>
-<h3 id="2-2表插入数据"><a href="#2-2表插入数据" class="headerlink" title="2.2表插入数据"></a>2.2表插入数据</h3><p>insert into &lt;表名&gt; [( &lt;字段名1&gt;[,..&lt;字段名n &gt; ])] values ( 值1 )[, ( 值n )]</p>
-<h3 id="2-3查询表中的数据"><a href="#2-3查询表中的数据" class="headerlink" title="2.3查询表中的数据"></a>2.3查询表中的数据</h3><p>查询所有行<br>select &lt;字段1，字段2，…&gt; from &lt; 表名 &gt; where &lt; 表达式 &gt;<br>查询前几行数据<br>查看表 MyClass 中前2行数据<br>mysql&gt; select * from MyClass order by id limit 0,2;</p>
-<h3 id="2-4-删除表中数据"><a href="#2-4-删除表中数据" class="headerlink" title="2.4 删除表中数据"></a>2.4 删除表中数据</h3><p>delete from 表名 where 表达式</p>
-<h3 id="2-5修改表中数据"><a href="#2-5修改表中数据" class="headerlink" title="2.5修改表中数据"></a>2.5修改表中数据</h3><p>update 表名 set 字段=新值,… where 条件</p>
-<h3 id="2-6增加字段"><a href="#2-6增加字段" class="headerlink" title="2.6增加字段"></a>2.6增加字段</h3><p>alter table 表名 add字段 类型 其他;<br>加索引<br>mysql&gt; alter table 表名 add index 索引名 (字段名1[，字段名2 …]);<br>加主关键字的索引<br>mysql&gt; alter table 表名 add primary key (字段名);<br>加唯一限制条件的索引<br>mysql&gt; alter table 表名 add unique 索引名 (字段名);<br>删除某个索引<br>mysql&gt; alter table 表名 drop index 索引名;<br>增加字段<br>mysql&gt; ALTER TABLE table_name ADD field_name field_type;<br>修改原字段名称及类型<br>mysql&gt; ALTER TABLE table_name CHANGE old_field_name new_field_name field_type;<br>删除字段<br>MySQL ALTER TABLE table_name DROP field_name;</p>
-<h3 id="2-7修改表名"><a href="#2-7修改表名" class="headerlink" title="2.7修改表名"></a>2.7修改表名</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rename table 原表名 to 新表名;</span><br></pre></td></tr></table></figure>
+                <h2 id="Eclipse环境下配置Tomcat8-0-36"><a href="#Eclipse环境下配置Tomcat8-0-36" class="headerlink" title="Eclipse环境下配置Tomcat8.0.36"></a><strong>Eclipse环境下配置Tomcat8.0.36</strong></h2><p>1.打开Eclipse，单击“Window”菜单，选择下方的“Preferences”</p>
+<p><img src="https://img-blog.csdn.net/20160705110138349" alt="img"></p>
+<p>2.单击“Server”选项，选择下方的“Runtime Environments”。</p>
+<p><img src="https://img-blog.csdn.net/20160705110536855" alt="img"></p>
+<p>3.点击“Add”添加Tomcat。</p>
+<p><img src="https://img-blog.csdn.net/20160705111130113" alt="img"></p>
+<p>4.点击“Next”，选中自己安装的Tomcat路径。</p>
+<p><img src="https://img-blog.csdn.net/20160705112803636" alt="img"></p>
+<p>5.点击“Finish”完成。</p>
+<p><img src="https://img-blog.csdn.net/20160705112952920" alt="img"></p>
+<h2 id="建立一个Web应用"><a href="#建立一个Web应用" class="headerlink" title="建立一个Web应用"></a><strong>建立一个Web应用</strong></h2><p>1.File<code>→</code>New<code>→</code>Dynamic Web Project</p>
+<p><img src="https://img-blog.csdn.net/20160705113923444" alt="img"></p>
+<p>2.创建一个<code>Dynamic Web Project</code></p>
+<p><img src="https://img-blog.csdn.net/20160705122613278" alt="img"></p>
+<p>3.点击“Next”下一步</p>
+<p><img src="https://img-blog.csdn.net/20160705122830434" alt="img"></p>
+<p>4.点击“Next”下一步</p>
+<p><img src="https://img-blog.csdn.net/20160705123551640" alt="img"></p>
+<p>5.点击“Finish”完成</p>
+<p><img src="https://img-blog.csdn.net/20160705123900233" alt="img"></p>
+<h2 id="让Tomcat服务器显示在控制台上，将Web应用部署到Tomcat中"><a href="#让Tomcat服务器显示在控制台上，将Web应用部署到Tomcat中" class="headerlink" title="让Tomcat服务器显示在控制台上，将Web应用部署到Tomcat中"></a><strong>让Tomcat服务器显示在控制台上，将Web应用部署到Tomcat中</strong></h2><p>1.Window<code>→</code>Show View<code>→</code>Servers</p>
+<p><img src="https://img-blog.csdn.net/20160705124703522" alt="img"></p>
+<p>2.点击链接<code>No servers are available. Click ths link to create a new server.</code> ，在弹出的对话框中选择Tomcat版本</p>
+<p><img src="https://img-blog.csdn.net/20160705125617013" alt="img"></p>
+<p>3.点击“Next”，添加我们的项目</p>
+<p><img src="https://img-blog.csdn.net/20160705130058545" alt="img"></p>
+<p>选中项目并点击Add，或是双击都可以添加到右边</p>
+<p>4.点击“Finish”完成</p>
+<p><img src="https://img-blog.csdn.net/20160705130507032" alt="img"></p>
+<p>返回下方的“Servers”面板，右键单击该面板中的“Tomcat v8.0 Server at localhost”节点，在弹出的快捷菜单中单击“Start”，即可启动指定的Web服务器。如果此时直接启动访问<a href="http://localhost:8080/day05" target="_blank" rel="noopener">http://localhost:8080/day05</a> ，会发现会报404的错误。这是因为我们没有添加主页，下面添加主页(index.jsp)的内容：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">%@</span> <span class="attr">page</span> <span class="attr">language</span>=<span class="string">"java"</span> <span class="attr">contentType</span>=<span class="string">"text/html; charset=UTF-8"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">pageEncoding</span>=<span class="string">"UTF-8"</span>%&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=UTF-8"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>欢迎页面<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	欢迎使用eclipse部署Tomcat。</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
+<p><strong>注意：web资源一定要在WebRoot目录下添加</strong>。如图：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190301003753486.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3llcmVueXVhbl9wa3U=,size_16,color_FFFFFF,t_70" alt="img"></p>
+<p>此时，再一次来访问该链接：<code>http://localhost:8080/day05</code> ，效果如下：</p>
+<p><img src="https://img-blog.csdnimg.cn/20190301003857596.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3llcmVueXVhbl9wa3U=,size_16,color_FFFFFF,t_70" alt="img"></p>
 
             </div>
             <hr/>
@@ -627,8 +649,8 @@
                 </a>
             </div>
             <br/>
-            <a  href="/2019/11/03/Mysql常用命令/">
-                    《mysql常用命令》
+            <a  href="/2019/11/03/Eclipse环境下配置Tomcat8.0.36/">
+                    《》
             </a> 由
             <a href="http://yoursite.com">
                 Jack Qin
@@ -673,7 +695,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/11/03/Tomcat配置/">
+                <a href="/2019/11/03/eclipse中修改jsp的编码为UTF-8/">
                     <div class="card-image">
                         
                         
@@ -685,11 +707,8 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1.下载安装1.1首先，登录到Tomcat官方装包下载地址。
-在【Download】目录下，找到并点击合适版本的Tomcat。
-（由于我的JDK为1.8.0，因此我选择了下载Tomcat8版本）。
+                            eclipse中修改jsp的编码为UTF-8一.修改原因在使用eclipse学习jsp时，很多默认的编码都是iso-8859-1，而我们需要使用的是utf-8编码，我们第一个接触改变jsp编码的方式可能都是在需要修改的jsp中修改，如下：
 
-1.2点击[tomcat8]后，根据自己
                         
                     </div>
                     <div class="publish-info">
@@ -714,25 +733,28 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/10/16/github个人博客搭建/">
+                <a href="/2019/11/03/Tomcat配置/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="github个人博客搭建">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">github个人博客搭建</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1.Hexo介绍Hexo是基于NodeJs的静态博客框架，简单、轻量，其生成的静态网页可以托管在Github和Heroku上。超快速度支持MarkDown一键部署丰富的插件
-2. 环境准备2.1 安装node.js去nodejs官网下载对应
+                            1.下载安装1.1首先，登录到Tomcat官方装包下载地址。
+在【Download】目录下，找到并点击合适版本的Tomcat。
+（由于我的JDK为1.8.0，因此我选择了下载Tomcat8版本）。
+
+1.2点击[tomcat8]后，根据自己
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-03
                             </span>
                         <span class="publish-author">
                             
