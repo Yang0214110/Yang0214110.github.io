@@ -453,40 +453,40 @@
                 <h2 id="request内置对象"><a href="#request内置对象" class="headerlink" title="request内置对象"></a>request内置对象</h2><p>隐含对象request是javax.servlet.HttpSeverletRequest接口实现类的对象，代表从客户端用户发送过来的请求。</p>
 <p>使用request对象可以获得客户端的信息以及用户提交的数据或参数，每次客户端请求都会产生一个request实例，请求结束后销毁request。</p>
 <h3 id="一-获取客户端信息"><a href="#一-获取客户端信息" class="headerlink" title="一.获取客户端信息"></a>一.获取客户端信息</h3><p>request对象获取客户端信息的常用的方法：</p>
-<p>![img](C:\Users\秦宇洋\Pictures\Camera Roll\p1.png)</p>
+<p><img src="https://img2018.cnblogs.com/blog/1648343/201904/1648343-20190406171056523-1568380202.png" alt="img"></p>
 <h3 id="案例："><a href="#案例：" class="headerlink" title="案例："></a>案例：</h3><p>创建userManager.jsp页面：</p>
-<p>![img](C:\Users\秦宇洋\Pictures\Camera Roll\p2.png)</p>
+<p><img src="https://img2018.cnblogs.com/blog/1648343/201904/1648343-20190406192327735-1850653115.png" alt="img"></p>
 <p>结果：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://localhost:8080/ch04/userManager.jsp</span><br></pre></td></tr></table></figure>
 
-<p>![img](C:\Users\秦宇洋\Pictures\Camera Roll\p3.png)</p>
+<p><img src="https://img2018.cnblogs.com/blog/1648343/201904/1648343-20190406192502598-2007492613.png" alt="img"></p>
 <h3 id="二、获取请求参数"><a href="#二、获取请求参数" class="headerlink" title="二、获取请求参数"></a>二、获取请求参数</h3><p>request对象获取参数的常用方法</p>
-<p>![img](C:\Users\秦宇洋\Pictures\Camera Roll\p4.png)</p>
+<p><img src="https://img2018.cnblogs.com/blog/1648343/201904/1648343-20190406195222233-1587105891.png" alt="img"></p>
 <p>案例：创建regUser.jsp</p>
-<p>![img](C:\Users\秦宇洋\Pictures\Camera Roll\p5.png)</p>
+<p><img src="https://img2018.cnblogs.com/blog/1648343/201904/1648343-20190406201804220-1418190784.png" alt="img"></p>
 <p>创建submit.jsp</p>
-<p>![img](C:\Users\秦宇洋\Pictures\Camera Roll\p6.png)</p>
+<p><img src="https://img2018.cnblogs.com/blog/1648343/201904/1648343-20190406201915962-671971356.png" alt="img"></p>
 <p>结果：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://localhost:8080/ch04/regUser.jsp</span><br></pre></td></tr></table></figure>
 
-<p>![img](C:\Users\秦宇洋\Pictures\Camera Roll\p7.png)</p>
+<p><img src="https://img2018.cnblogs.com/blog/1648343/201904/1648343-20190406202015939-88603179.png" alt="img"></p>
 <p>输入数据，如：</p>
-<p> ![img](C:\Users\秦宇洋\Pictures\Camera Roll\p8.png)</p>
+<p> <img src="https://img2018.cnblogs.com/blog/1648343/201904/1648343-20190406202133976-2057975854.png" alt="img"></p>
 <p>点击提交，跳转页面：</p>
-<p>![img](C:\Users\秦宇洋\Pictures\Camera Roll\p10.png)</p>
+<p><img src="https://img2018.cnblogs.com/blog/1648343/201904/1648343-20190406202054728-257561966.png" alt="img"></p>
 <h3 id="三、jsp中文乱码"><a href="#三、jsp中文乱码" class="headerlink" title="三、jsp中文乱码"></a>三、jsp中文乱码</h3><p>上述案例若输入用户名为汉字，则会出现乱码情况，如：</p>
-<p>![img](C:\Users\秦宇洋\Pictures\Camera Roll\p12.png)</p>
+<p><img src="https://img2018.cnblogs.com/blog/1648343/201904/1648343-20190406203442367-1938255221.png" alt="img"></p>
 <p><img src="https://img2018.cnblogs.com/blog/1648343/201904/1648343-20190406203507588-165287462.png" alt="img"></p>
 <p>解决方法一：可以在submit.jsp页面中写入以下语句，防止乱码：</p>
-<p>![img](C:\Users\秦宇洋\Pictures\Camera Roll\p13.png)</p>
+<p><img src="https://img2018.cnblogs.com/blog/1648343/201904/1648343-20190406203908375-1818877192.png" alt="img"></p>
 <p>结果：</p>
-<p>![img](C:\Users\秦宇洋\Pictures\Camera Roll\p14.png)</p>
-<p>![img](C:\Users\秦宇洋\Pictures\Camera Roll\p15.png)</p>
+<p><img src="https://img2018.cnblogs.com/blog/1648343/201904/1648343-20190406203714773-875941502.png" alt="img"></p>
+<p><img src="https://img2018.cnblogs.com/blog/1648343/201904/1648343-20190406203734856-1204911966.png" alt="img"></p>
 <p>解决方法二：</p>
 <p>将regUser.jsp和submit.jsp两个页面头部的page指令均改为以下编码格式：</p>
 <p>&lt;%@ page language=”java” import=”java.util.*” contentType=”text/html;charset=GB2312”%&gt; </p>
 <p>将submit.jsp页面中的用户名的代码片段改为以下形式：</p>
-<p>![img](C:\Users\秦宇洋\Pictures\Camera Roll\p16.png)</p>
+<p><img src="https://img2018.cnblogs.com/blog/1648343/201904/1648343-20190406204623947-1794835634.png" alt="img"></p>
 <h3 id><a href="#" class="headerlink" title></a></h3>
             </div>
             <hr/>
